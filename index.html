@@ -1,93 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Weather App</title>
-    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
-  </head>
-
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/style.css"/>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Weather</title>
+</head>
+<body>
     <div class="container">
       <div class="weather-app">
-        <form class="search-form" id="search-form">
-          <div class="row">
-            <div class="col-9">
-              <input
-                type="search"
-                placeholder="Type a city.."
-                autofocus="on"
-                autocomplete="off"
-                id="city-search"
-                class="form-control shadow-sm"
-              />
-            </div>
-            <div class="col-3">
-              <input
-                type="submit"
-                value="Search"
-                class="form-control btn btn-primary shadow-sm"
-              />
-              
-            </div>
-            <div class="col-3">
-              <button
-                class="btn btn-success w-100"
-                id="current-location-button"
-              >
-                Current
-              </button>
-            </div>
-          </div>
-        </form>
-        <h1 id="current-location city">
-          Sydney NSW, Australia
-        </h1>
-        <ul>
-        <li id="date"></li>
-          <li id="current-time">
-            Friday 19:40
-          </li>
-          <li id="description"></li>
-        </ul>
-        <div class="row">
-          <div class="col-6">
-            <div class="clearfix">
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                alt="Cloudy icon"
-                class="weather-icon float-left"
-              />
-              <div class="float-left">
-                <span class="temperature" id="temperature"></span
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-6">
-            <ul>
-              <li>
-                Precipitation: 0%
-              </li>
-              <li>
-                Humidity: 77%
-              </li>
-              <li>
-                Wind: 8 km/h
-              </li>
-            </ul>
-          </div>
+    <h1>
+        Kyiv
+    </h1>
+    <ul>
+        <li>
+            Friday 19:00
+        </li>
+        <li>
+            Cloudy
+        </li>
+    </ul>
+    <div class="row">
+        <div class="col-6">
+            <img src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+            alt="cloudy"
+            />
+            -6°C | °F
         </div>
+        <div class="col-6">
+            <ul>
+                <li>
+                    Precipitation: 8%
+                </li>
+                <li>
+                    Humidity: 82%
+                </li>
+                <li>
+                    Wind: 21 km/h
+                </li>
+            </ul>
+        </div>
+    </div>
+  </div>
+    <small>
+      <a href="https://vanilla-jade-kitsune-1cb0bc.netlify.app/" target="_blank">
+        Open-source code
+      </a>
+      by Nataliia Dermenzhy
+    </small>
+    <br/>
+    <a href="" class="btn btn-primary">
+        Click me 
+    </a>
+</div>
+<div class="container">
+    <div class="row">
+      <div class="col" id="day">
+        1 of 2
+      </div>
+      <div class="col" id="day">
+        2 of 2
       </div>
     </div>
-    <script src="index.js"></script>
-  </body>
+    <div class="row">
+      <div class="col" id="day">
+        1 of 3
+      </div>
+      <div class="col" id="day">
+        2 of 3
+      </div>
+      <div class="col" id="day">
+        3 of 3
+      </div>
+    </div>
+  </div>
+    <script src="src/index.js"></script>
+</body>
 </html>
